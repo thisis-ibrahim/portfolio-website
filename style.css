@@ -1,0 +1,155 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #fafaf9;
+  color: #334e68;
+  line-height: 1.6;
+}
+
+/* The bar across the top of every page */
+.topbar {
+  position: sticky;
+  top: 0;
+  background-color: #fafaf9;
+  border-bottom: 1px solid #d9e2ec;
+}
+
+.topbar-inner {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.brand {
+  color: #102a43;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.topbar nav a {
+  display: inline-block;
+  color: #334e68;
+  text-decoration: none;
+  padding: 6px 10px;
+  margin-left: 2px;
+  border-radius: 4px;
+}
+
+.topbar nav a:hover {
+  background-color: #f0f4f8;
+  color: #0967d2;
+}
+
+/* Everything below the bar */
+.page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+h1 {
+  color: #102a43;
+  margin-bottom: 0;
+}
+
+h2 {
+  color: #102a43;
+  margin-top: 40px;
+  border-bottom: 1px solid #d9e2ec;
+  padding-bottom: 5px;
+  /* stops the sticky bar covering the heading when you jump to a section */
+  scroll-margin-top: 65px;
+}
+
+h3 {
+  color: #102a43;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+a {
+  color: #0967d2;
+}
+
+.subtitle {
+  color: #52708c;
+  margin-top: 5px;
+}
+
+.tech {
+  color: #52708c;
+  font-size: 14px;
+  margin-top: 3px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+/* Each project block is one big link to that project's own page */
+.project {
+  display: block;
+  color: #334e68;
+  text-decoration: none;
+  border: 1px solid #d9e2ec;
+  padding: 15px 20px;
+  margin-top: 20px;
+}
+
+.project:hover {
+  background-color: #f0f4f8;
+  border-color: #0967d2;
+}
+
+.project h3 {
+  color: #0967d2;
+  margin-top: 0;
+}
+
+.more {
+  color: #0967d2;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+footer {
+  margin-top: 50px;
+  padding-top: 15px;
+  border-top: 1px solid #d9e2ec;
+  font-size: 14px;
+  color: #52708c;
+}
+
+/* On phones the bar is taller, so shrink it and jump a bit further down */
+@media (max-width: 600px) {
+  .topbar-inner {
+    padding: 8px 20px;
+  }
+
+  .brand {
+    font-size: 15px;
+  }
+
+  .topbar nav a {
+    font-size: 13px;
+    padding: 4px 6px;
+    margin-left: 0;
+    margin-right: 2px;
+  }
+
+  h2 {
+    scroll-margin-top: 100px;
+  }
+}
